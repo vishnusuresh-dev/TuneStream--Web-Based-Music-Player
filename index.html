@@ -11,7 +11,7 @@
 <body>
   <div class="container1 flex">
 
-
+<!-- left panel -->
     <div class="left-panel">
 
       <div class="icon">
@@ -26,29 +26,79 @@
         </div>
 
         <div class="search flex side-menu">
-          <i class="fa-solid fa-magnifying-glass side-icon "></i>
+          <i class="fa-solid fa-magnifying-glass side-icon"></i>
           <span class="side-label">Search</span>
         </div>
 
-          <div class="playlist flex side-menu">
+          <div class="playlist flex side-menu ">
           <i class="fa-solid fa-list side-icon"></i>
           <span class="side-label">Playlist</span>
           <i class="fa-solid fa-caret-down caret"></i>
         </div>
       </div>
+    </div>
+
+  <!-- Right Panel -->
+    <div class="right-panel">
+
+      <div class="right-panel-top">
+
+        <div class="search-bar-container">
+          <div class="search-bar-input">
+            <input type="text" placeholder="Search your songs here" class="search-field">
+          </div>
+          <div class="search-bar-icon">
+            <i class="fa-solid fa-magnifying-glass text-search"></i>
+          </div>
+        </div>
 
 
 
-      <div class="right-panel"></div>
-
-
-
-      <div class="container2">
-      <div class="footer-panel">
-        bskbcjksbcsbcbskbc
+        <div class="top-right-panel">
+          <div class="account">
+            <i class="fa-regular fa-circle-user top-icon"></i>
+          </div>
+        </div>
       </div>
-      </div>
+
     </div>
   </div>
+
+
+    <div class="container2">
+      <div
+      class="footer-panel flex">
+
+        <div class="album-info flex">
+          <div class="album-art-info">
+            <img src="./assets/album-sample.jpeg" alt="album-art" class="album-art">
+          </div>
+            <div class="song-info">
+              <span>Song Name</span>
+              <p>Artist Details</p>
+            </div>
+
+
+        </div>
+
+        <div class="play-controls">
+          <i class="fa-solid fa-backward-step"></i>
+          <i class="fa-solid fa-play"></i>
+          <i class="fa-solid fa-forward-step"></i>
+        </div>
+
+        <div class="seek-bar">
+          <audio src="" controls></audio>
+        </div>
+
+        <div class="like-shuffle"></div>
+
+
+      </div>
+    </div>
+
+  </div>
+
+  <script src="./script.js"></script>
 </body>
 </html>
