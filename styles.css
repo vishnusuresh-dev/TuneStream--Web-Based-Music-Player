@@ -26,7 +26,7 @@ body{
   display: flex;
   gap: 0.3rem;
   font-family: cursive;
-  color: white;
+  color: orangered;
 }
 
 .side-bar{
@@ -38,9 +38,15 @@ body{
 
 .side-menu{
   gap: 0.5rem;
-  color:grey
+  color:grey;
+  width: 10rem;
+  display: flex;
+  justify-content: center;
 }
 
+.playlist{
+  margin-left: 0.8rem;
+}
 .side-icon{
   font-size: 1.6rem;
 }
@@ -55,7 +61,8 @@ body{
 }
 
 .right-panel{
-  height: 90vh;
+  height: 87vh;
+  width: 85vw;
 }
 
 .conatiner2{
@@ -65,10 +72,95 @@ body{
 .footer-panel{
   width: 100vw;
   background-color: #171b22;
-  position: relative;
-  z-index: -2;
-  top: 5.5rem;
-  height: 11vh;
-  width: 182.3vw;
+  height: 10vh;
+  width: 100vw;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
+.side-menu:hover{
+  background-color:#272e3c;
+  border-radius: 1rem;
+  padding:0.8rem;
+  cursor: pointer;
+}
+
+.right-panel-top{
+  width: 80vw;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 1rem;
+}
+
+
+.search-field{
+  width:30rem;
+  height: 2.5rem;
+  background-color: #272e3c;
+  border: none;
+  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+  text-align: center;
+}
+
+.top-icon{
+  color: azure;
+  font-size: 2.5rem;
+}
+
+.top-side-panel{
+  display: flex;
+  gap:2rem;
+}
+
+.search-bar-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.search-bar-icon{
+  background-color: aliceblue;
+  padding: 0.68rem;
+  background-color: #272e3c;
+  border: none;
+  border-top-right-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  color: grey
+}
+
+.play-controls{
+  color:grey;
+  font-size: 1.3rem;
+}
+
+.album-art{
+  height: 3.8rem;
+  width: 3.8rem;
+  border-radius: 50%;
+}
+
+.album-info{
+  display: flex;
+  align-items: center;
+  width: 20vw;
+}
+
+.song-info{
+  margin-left: 0.7rem;
+}
+
+
+.album-info span{
+  font-size: 1rem;
+  font-weight: 500;
+  color: rgb(224, 216, 216);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.album-info p{
+  margin-top: 0.2rem;
+  font-size: 0.8rem;
+  font-weight: 100;
+  color:grey;
+}
