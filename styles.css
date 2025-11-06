@@ -164,3 +164,21 @@ body{
   font-weight: 100;
   color:grey;
 }
+
+.song-listings{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: grey;
+  gap: 0.5rem;
+}
+
+audio{
+ background: transparent;
+}
+
+.song-item:hover{
+  color: azure;
+  cursor: pointer;
+} 
