@@ -43,8 +43,9 @@
     </div>
 
   <!-- Right Panel -->
-    <div class="right-panel">
 
+    <div class="right-panel">
+      
       <div class="right-panel-top">
 
         <div class="search-bar-container">
@@ -52,11 +53,9 @@
             <input type="text" placeholder="Search your songs here" class="search-field">
           </div>
           <div class="search-bar-icon">
-            <i class="fa-solid fa-magnifying-glass text-search"></i>
+            <i class="fa-solid fa-magnifying-glass text-search glass"></i>
           </div>
         </div>
-
-
 
         <div class="top-right-panel">
           <div class="account">
@@ -65,30 +64,38 @@
         </div>
       </div>
 
+      <div class="current-running-album">
+          <!-- added dynamically -->
+
+      </div>
     </div>
   </div>
 
 
     <div class="container2">
-      <div
-      class="footer-panel flex">
+      <div class="footer-panel ">
 
         <div class="album-info flex">
           <div class="album-art-info">
-            <img src="./assets/album-sample.jpeg" alt="album-art" class="album-art">
+            <!-- added dynamically -->
           </div>
             <div class="song-info">
-              <span>Song Name</span>
-              <p>Artist Details</p>
+              <!-- added dynamically -->
             </div>
 
 
         </div>
 
         <div class="play-controls">
-          <i class="fa-solid fa-backward-step"></i>
-          <i class="fa-solid fa-play"></i>
-          <i class="fa-solid fa-forward-step"></i>
+          <div class="backward">
+            <i class="fa-solid fa-backward-step"></i>
+          </div>
+          <div class="play-pause">
+            <i class="fa-solid fa-pause" ></i>
+          </div>
+          <div class="forward">
+            <i class="fa-solid fa-forward-step forward"></i>
+          </div>
         </div>
 
         <div class="seek-bar">
