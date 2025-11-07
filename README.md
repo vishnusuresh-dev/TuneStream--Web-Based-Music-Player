@@ -11,7 +11,6 @@ TuneStream is a sleek and responsive music player built using **HTML, CSS, and J
 ✅ **Dynamic Playlist Rendering** – Tracks and albums are fetched from a local JSON file (simulating real music data).  
 ✅ **Smooth UX Enhancements**
 - Hover effects and active state highlights  
-- Smooth transitions and animations  
-- Persistent playback bar across pages  
+- Smooth transitions and animations   
 
 ---
