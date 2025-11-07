@@ -70,6 +70,7 @@ body{
 }
 
 .footer-panel{
+  display: none;
   width: 100vw;
   background-color: #171b22;
   height: 10vh;
@@ -88,7 +89,7 @@ body{
 .right-panel-top{
   width: 80vw;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   margin-top: 1rem;
 }
 
@@ -96,6 +97,7 @@ body{
 .search-field{
   width:30rem;
   height: 2.5rem;
+  margin-left: 5rem;
   background-color: #272e3c;
   border: none;
   border-top-left-radius: 2rem;
@@ -128,7 +130,13 @@ body{
   color: grey
 }
 
+.glass:hover{
+
+  border: 1 px solid white;
+}
 .play-controls{
+  display: flex;
+  gap:1rem;
   color:grey;
   font-size: 1.3rem;
 }
@@ -166,9 +174,10 @@ body{
 }
 
 .song-listings{
+  margin-left: 2.5rem;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: start;
   flex-direction: column;
   color: grey;
   gap: 0.5rem;
@@ -182,3 +191,40 @@ audio{
   color: azure;
   cursor: pointer;
 } 
+
+
+.current-running-album{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ height: 72vh;
+ 
+}
+
+.album-display img{
+  width: 380px;
+  height: 380px;
+  border-radius: 50%;
+  animation: rotate 75s linear infinite; 
+}
+
+.album-para{
+  font-size: 3rem;
+  text-align: center;
+  color: aliceblue;
+}
+
+.singerName{
+  color: grey;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
