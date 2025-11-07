@@ -1,9 +1,9 @@
 [
-  { "title": "Hosanna", "file": "./songs/Hosanna.mp3" },
-  { "title": "Oh Shala", "file": "./songs/Oh-Shala.mp3" },
-  { "title": "Azhagiye", "file": "./songs/Azhagiye.mp3" },
-  { "title": "Ennamo Yeadho", "file": "./songs/Ennamo Yeadho.mp3" },
-    { "title": "Yellae Lama", "file": "./songs/Yellae-Lama.mp3" },
-  { "title": "Hasili-Fisiliye", "file": "./songs/Hasili-Fisiliye.mp3" },
-    { "title": "Ride-It", "file": "./songs/Ride It   Hindi Version.mp3" }
+  { "title": "Hosanna", "file": "./songs/Hosanna.mp3" ,"artist": "Vijay Prakash, AR Rahman"  },
+  { "title": "Oh Shala", "file": "./songs/Oh-Shala.mp3" , "artist":"Yuvan Shankar Raja"},
+  { "title": "Azhagiye", "file": "./songs/Azhagiye.mp3" , "artist":"Haricharan,AR Rahman"},
+  { "title": "Ennamo Yeadho", "file": "./songs/Ennamo Yeadho.mp3","artist":"Aalap Raju" },
+  { "title": "Yellae Lama", "file": "./songs/Yellae-Lama.mp3" ,"artist":"Vijay Prakash"},
+  { "title": "Hasili-Fisiliye", "file": "./songs/Hasili-Fisiliye.mp3" ,"artist":"Karthik, Harris jayaraj"},
+  { "title": "Ride-It", "file": "./songs/Ride It   Hindi Version.mp3" , "artist":"Jay Sean" }
 ]
