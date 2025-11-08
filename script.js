@@ -1,6 +1,5 @@
 let songListings = document.querySelector(".song-listings");
 let audioSrc = document.querySelector(".audio");
-let songName = document.querySelector(".song-name");
 let playPause = document.querySelector(".play-pause");
 let forward = document.querySelector(".forward");
 let backward = document.querySelector(".backward");
@@ -18,7 +17,6 @@ async function  songList() {
         songListElement.addEventListener("click",()=>{
           //to set all color back to white
           let colorDefault= document.querySelectorAll(`.song-item`);
-          console.log(colorDefault);
           for(let j =0;j<colorDefault.length;j++){
             colorDefault[j].style.color="grey";
           }
@@ -62,6 +60,7 @@ async function  songList() {
           singerName.innerHTML=songs[i].artist;
           let displayArt = document.createElement("IMG");
           displayArt.src=`./assets/albumart${i}.jpg`;
+          displayArt.classList.add("albumart")
           albumDisplay.appendChild(displayArt);
           albumDisplay.appendChild(albumName);
           albumDisplay.appendChild(singerName);
@@ -71,6 +70,7 @@ async function  songList() {
 
   }
       playControls();
+      forwardBackward(songs);
 }
 
 songList();
@@ -88,4 +88,65 @@ function playControls() {
     }
   });
 }
+
+
+function forwardBackward(songs){
+  songListings.addEventListener("click",()=>{
+  let currentPlaying = document.querySelector(".song-name")
+  for(let i=0;i<songs.length;i++){
+    if(songs[i].title===currentPlaying.textContent){
+      console.log(i);
+      actions(i,songs);
+    }
+  }
+  });
+}
+
+  function actions(i,songs){
+    forward.addEventListener("click",()=>{
+      let nextIndex = ++i;
+      let last=(songs.length);
+      if(nextIndex>last){
+        i=-1;
+      }
+      audioSrc.src=songs[nextIndex].file;
+      audioSrc.play();
+      let albumArt = document.querySelector(".albumart");
+      albumArt.src=`./assets/albumart${nextIndex}.jpg`;
+      let albumPara = document.querySelector(".album-para");
+      albumPara.textContent=songs[i].title;
+      let singerName= document.querySelector(".singerName");
+      singerName.textContent=songs[i].artist;
+      let colorDefault=document.querySelectorAll(".song-item");
+      for(let j =0;j<colorDefault.length;j++){
+            colorDefault[j].style.color="grey";
+          }
+      let songHighlight = document.querySelector(`.song${i}`);
+      songHighlight.style.color="white";
+    });
+
+    backward.addEventListener("click",()=>{
+      let previousIndex=--i;
+      if(previousIndex<0){
+        let lastIndex=(songs.length);
+        i=lastIndex;
+      }
+      audioSrc.src=songs[previousIndex].file;
+      audioSrc.play();
+      let albumArt = document.querySelector(".albumart");
+      albumArt.src=`./assets/albumart${previousIndex}.jpg`;
+      let albumPara = document.querySelector(".album-para");
+      albumPara.textContent=songs[i].title;
+      let singerName= document.querySelector(".singerName");
+      singerName.textContent=songs[i].artist;
+      let colorDefault=document.querySelectorAll(".song-item");
+      for(let j =0;j<colorDefault.length;j++){
+            colorDefault[j].style.color="grey";
+          }
+      let songHighlight = document.querySelector(`.song${i}`);
+      songHighlight.style.color="white"; 
+    })
+  }
+
+
 
